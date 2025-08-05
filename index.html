@@ -1,112 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OLX — Open Life eXperience</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OLX - Open Life eXperience</title>
   <style>
-    * {
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      background: #f0f2f5;
+      color: #222;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
     }
-    body {
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
-      color: #fff;
+    main {
+      max-width: 600px;
+      background: white;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-weight: 800;
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      color: #222;
+      letter-spacing: 1px;
+    }
+    p.lead {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+      color: #555;
       line-height: 1.6;
     }
-    header {
-      padding: 2rem;
-      text-align: center;
-      background-color: rgba(0, 0, 0, 0.3);
-    }
-    header h1 {
-      font-size: 3rem;
-      font-weight: 800;
-    }
-    header p {
-      font-size: 1.2rem;
-      color: #ddd;
-      margin-top: 0.5rem;
-    }
-    .hero {
-      padding: 3rem 2rem;
-      max-width: 900px;
-      margin: 0 auto;
-      text-align: center;
-    }
-    .hero h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-    .hero p {
-      font-size: 1.1rem;
-      color: #ccc;
-    }
-    .section {
-      padding: 4rem 2rem;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    .section h3 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-    }
-    .section p {
+    .coming-soon {
       font-size: 1rem;
-      color: #ddd;
-      margin-bottom: 1.5rem;
+      font-weight: 600;
+      color: #0070f3;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 2rem;
     }
-    .disclaimer {
-      text-align: center;
-      font-size: 0.8rem;
-      color: #999;
-      padding: 2rem;
+    a.about-link {
+      display: inline-block;
+      margin-top: 30px;
+      font-weight: 600;
+      color: #0070f3;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.3s ease;
     }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background-color: rgba(0, 0, 0, 0.2);
-      font-size: 0.9rem;
-      color: #bbb;
+    a.about-link:hover,
+    a.about-link:focus {
+      border-color: #0070f3;
     }
   </style>
 </head>
 <body>
-  <header>
+  <main>
     <h1>OLX</h1>
-    <p>Open Life eXperience — Where Creativity Meets Possibility</p>
-  </header>
-
-  <section class="hero">
-    <h2>Coming Soon</h2>
-    <p>We’re building something exciting — a unique space dedicated to exploring lifestyle, technology, and global innovation through new perspectives. Stay tuned as we develop a platform focused on discovery, connection, and open experience.</p>
-  </section>
-
-  <section class="section">
-    <h3>What is OLX?</h3>
-    <p>OLX stands for <strong>Open Life eXperience</strong> — a concept dedicated to fostering creative exploration, cross-cultural learning, and a better quality of life through ideas, tools, and collaboration. We’re not a marketplace. We’re something new.</p>
-
-    <h3>Our Mission</h3>
-    <p>To empower individuals and communities by giving them a platform to learn, share, and grow through global inspiration and local stories. From tech tips to travel stories, OLX is the place where innovation meets humanity.</p>
-
-    <h3>Our Vision</h3>
-    <p>We envision a digital space where people from any country can experience new cultures, learn creative skills, and express themselves freely — guided by openness, respect, and inspiration.</p>
-  </section>
-
-  <section class="section">
-    <h3>Get In Touch</h3>
-    <p>Interested in collaborating, contributing, or supporting OLX? We’d love to hear from you. Please check back soon for contact details and community access.</p>
-  </section>
-
-  <div class="disclaimer">
-    This site is independently owned and operated. It is <strong>not affiliated with OLX Group or any of its subsidiaries</strong>. OLX here stands for Open Life eXperience.
-  </div>
-
-  <footer>
-    &copy; 2025 OLX — Open Life eXperience. All rights reserved.
-  </footer>
+    <p class="coming-soon">Coming Soon</p>
+    <p class="lead">
+      Open Life eXperience — Where Creativity Meets Possibility<br />
+      We’re building something exciting — a unique space dedicated to exploring lifestyle, technology, and global innovation through new perspectives. Stay tuned as we develop a platform focused on discovery, connection, and open experience.
+    </p>
+    <a href="about.html" class="about-link" aria-label="About This Site">About This Site</a>
+  </main>
 </body>
 </html>
